@@ -1,0 +1,441 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pitch3">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="MAN \n UNITED"
+                android:textStyle="bold"
+                android:onClick="addScoreForTeamA"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="46sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="46sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="REAL \n MADRID"
+                android:textSize="28sp"
+                android:onClick="addScoreForTeamB"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Min \n 90:00"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addShotsForTeamA"
+                android:text="SHOTS" />
+
+            <TextView
+                android:id="@+id/team_a_shots"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="-"
+                android:layout_marginTop="8dp"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/team_b_shots"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addShotsForTeamB"
+                android:text="SHOTS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addFoulsForTeamA"
+                android:text="FOULS" />
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="-"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addFoulsForTeamB"
+                android:text="FOULS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addCornersForTeamA"
+                android:text="CORNERS" />
+
+            <TextView
+                android:id="@+id/team_a_corners"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="-"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/team_b_corners"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="24dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addCornersForTeamB"
+                android:text="CORNERS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp"
+
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addYellowForTeamA"
+                android:text="YELLOW " />
+
+            <TextView
+                android:id="@+id/team_a_yellow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/team_b_yellow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+
+                android:layout_marginRight="24dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addYellowForTeamB"
+                android:text="YELLOW" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="34dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addRedForTeamA"
+                android:text="RED CARD" />
+
+            <TextView
+                android:id="@+id/team_a_red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="-"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/team_b_red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="26sp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+
+                android:layout_marginRight="24dp"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:onClick="addRedForTeamB"
+                android:text="RED CARD" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:onClick="resetScore"
+            android:text="RESET" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
